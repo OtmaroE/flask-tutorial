@@ -1,6 +1,10 @@
 import os
 
+from dotenv import load_dotenv
 from flask import Flask
+
+# Loading .env file into the project
+load_dotenv(override=True)
 
 def create_app(test_config=None):
     # create and configure the app

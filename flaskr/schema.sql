@@ -2,7 +2,7 @@ drop table if exists user;
 drop table if exists post;
 
 create table user (
-    if integer primary key autoincrement,
+    id integer primary key autoincrement,
     username text unique not null,
     password text not null
 );
